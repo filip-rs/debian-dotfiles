@@ -123,7 +123,7 @@ bindsym $mod+Shift+space floating toggle
 # Window gaps
 gaps inner 10
 gaps outer 10
-gaps top 35
+gaps top 10
 
 # Border
 default_border pixel 0
