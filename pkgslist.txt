@@ -1,0 +1,8 @@
+neofetch
+i3
+rofi
+neovim
+npm
+nodejs
+python
+
