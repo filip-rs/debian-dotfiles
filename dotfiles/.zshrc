@@ -159,6 +159,9 @@ alias zshconf="nvim ~/.zshrc"
 bindkey '^A' beginning-of-line   # Ctrl-A: Move to beginning
 bindkey '^E' end-of-line         # Ctrl-E: Move to end
 
+bindkey '^K' history-substring-search-up     
+bindkey '^J' history-substring-search-down   
+
 # To customize prompt, run `p10k configure` or edit ~/.config/zsh/.p10k.zsh.
 [[ ! -f ~/.config/zsh/.p10k.zsh ]] || source ~/.config/zsh/.p10k.zsh
 
