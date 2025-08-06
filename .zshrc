@@ -159,8 +159,6 @@ alias zshconf="nvim ~/.zshrc"
 bindkey '^A' beginning-of-line   # Ctrl-A: Move to beginning
 bindkey '^E' end-of-line         # Ctrl-E: Move to end
 
-bindkey '^K' history-substring-search-up     
-bindkey '^J' history-substring-search-down   
 
 # To customize prompt, run `p10k configure` or edit ~/.config/zsh/.p10k.zsh.
 [[ ! -f ~/.config/zsh/.p10k.zsh ]] || source ~/.config/zsh/.p10k.zsh
@@ -194,6 +192,7 @@ alias heicconvert="for file in *.heic; do heif-convert $file ${file/%.heic/.png}
 alias gpt="chatgpt.sh -cc"
 alias qrc="qrencode -t UTF8"
 alias mccmd="mcrcon -H 129.241.208.10 -P 25575 -p "
+alias stow="stow . -t $HOME"
 
 #alias powersave="sudo echo "2000000" > /sys/devices/system/cpu/cpu*/cpufreq/scaling_max_freq"
 #alias performance="sudo echo "3201000" > /sys/devices/system/cpu/cpu*/cpufreq/scaling_max_freq"
@@ -215,6 +214,10 @@ alias cd="z"
 #zprof
 
 source $ZSH/oh-my-zsh.sh
+
+bindkey '^K' history-substring-search-up     # Ctrl-A: Move to beginning
+bindkey '^J' history-substring-search-down   # Ctrl-E: Move to end
+
 source ~/powerlevel10k/powerlevel10k.zsh-theme
 
 if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
